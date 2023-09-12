@@ -40,8 +40,70 @@ Template: astra
         height:71px
        }
 
-       textarea#your-message {
+    input#your-adresse {
         width:383px;
         border-radius:10px;
-        height:237px
-       }
+        height:71px
+
+    }
+
+    input#your-prenom {
+        width:383px;
+        border-radius:10px;
+        height:71px
+
+    }
+
+    input#your-code {
+        width:383px;
+        border-radius:10px;
+        height:71px
+
+    }
+
+    input#your-ville {
+        width:383px;
+        border-radius:10px;
+        height:71px
+
+    }
+    
+
+.colonne {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 150px;
+    margin-bottom: 15px;
+    
+}
+
+.Colonne2 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 330px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 150px;
+    margin-bottom: 15px;
+}
+
+.colonne3 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 330px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 150px;
+    
+}
+
+input#submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+   }
