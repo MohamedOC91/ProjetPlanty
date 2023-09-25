@@ -10,141 +10,334 @@ Text Domain: astra-child
 Template: astra
 */
 
-.wpcf7-submit  { 
-    background:  #E0B9B4 !important;         /* couleur d’arrière-plan */
-    color: #e8eaed !important;              /* couleur de police */
-    margin-left: auto !important;
-    margin-right: auto !important;
-     }
-     .uacf7-form-1486 {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        flex-direction:column
-    }
 
-    label {
-        font-size: 20px;
-        font-weight: 400;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
 
-    input#your-email {
-        width:383px;
-        border-radius:10px;
-        height:71px
-       }
-
-       textarea#your-message {
-        height:237px;
-        width: 383px;
-        border-radius:10px
-    }
-                        
-    input#your-name {
-        width:383px;
-        border-radius:10px;
-        height:71px
-       }
-
-    input#your-adresse {
-        width:383px;
-        border-radius:10px;
-        height:71px
-
-    }
-
-    input#your-prenom {
-        width:383px;
-        border-radius:10px;
-        height:71px
-
-    }
-
-    input#your-code {
-        width:383px;
-        border-radius:10px;
-        height:71px
-
-    }
-
-    input#your-ville {
-        width:383px;
-        border-radius:10px;
-        height:71px
-
-    }
-    
-
-.colonne {
-    display: flex;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 150px;
-    margin-bottom: 15px;
-    
+  font-family: 'Syne', sans-serif !important; 
+  color: #fff !important;
+}
+.container {
+  width : 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+h1 {
+  font-family: 'Syne', sans-serif !important; 
+  text-transform: uppercase;
+  font-size: 38px !important;
+  font-weight: 800 !important;
+  text-align: center;
+  padding: 50px 0;
+  color: white !important;
+}
+h2 {
+  font-family: 'Syne', sans-serif !important; 
+  font-size: 30px;
+  font-weight: 700 !important;
+  margin-bottom: 20px;
+  color: white !important;
+}
+hr {
+  color: #fff;
+  margin-top: 10px;
 }
 
-.Colonne2 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 330px;
-    align-items: center;
-    justify-content: center;
-    column-gap: 150px;
-    margin-bottom: 15px;
+.votre-commande h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+.commande-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.commande-items .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.commande-items .item img {
+  margin-bottom: 20px;
+}
+.commande-items .item .item-ctrl {
+  display: flex;
+}
+.commande-items .item .item-ctrl .validate {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #E0B9B4;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  transition: all 250ms;
+}
+.commande-items .item .item-ctrl .validate:hover {
+  background-color: #DC9F96;
 }
 
-.colonne3 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 330px;
-    margin-bottom: 50px;
-    align-items: center;
-    justify-content: center;
-    column-gap: 150px;
-    
+input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+.number-input {
+  /* border: 1px solid #ddd; */
+  display: inline-flex;
+  margin-right: 10px;
 }
 
-input#submit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+.number-btns {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.number-input button {
+  outline:none;
+  appearance: none;
+  background-color: #DC9F96;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height:27px;
+  
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+.number-input button:nth-child(2){
+  border-radius: 0 8px 0 0;
+  border-bottom: 2px solid white;
+}
+.number-input button:nth-child(1){
+  border-radius: 0 0 8px 0;
+}
+
+
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 2px;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+  font-family: sans-serif;
+  max-width: 3.5rem;
+  padding: .5rem;
+  border: solid #ddd;
+  border-width:1px;
+  border-radius: 8px 0 0px 8px;
+  font-size: 1rem;
+  height: 54px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.informations-livraison {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 40px;
+  flex-wrap: nowrap;
+}
+.informations-livraison-item {
+  width: 100%;
+}
+.informations-livraison-item form {
+  display: flex;
+  flex-direction: column;
+}
+.informations-livraison  label {
+  font-size: 20px;
+  margin-bottom: 0px;
+  line-height:50px !important;
+}
+.informations-livraison form input {
+  height: 70px;
+  border-radius: 8px;
+  margin-bottom: 1rem; 
+  font-size: 20px;
+  font-weight: 400;
+  color: #666;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+.line {
+  height: 450px;
+  width: 2.5px;
+  background-color: #fff;
+}
+
+.commander-btn-div {
+  width: 100%;
+  text-align: center;
+}
+.commander-btn, input.wpcf7-form-control.wpcf7-submit.has-spinner  {
+  width: 200px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #E0B9B4;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  margin: 50px 0;
+  cursor: pointer;
+  transition: all 250ms;
+}
+.commander-btn:hover {
+  background-color: #DC9F96;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  h1 {
+      font-size: 30px;
+  }
+  h2 {
+      font-size: 24px;
+  }
+  .line {
+      display: none;
+  }
+  .informations-livraison {
+      flex-wrap: wrap;
+  }
+  .informations-livraison-item{
+      width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"],form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,body .wp-block-file .wp-block-file__button {
+
+  padding: 0;
+  margin: 0;
+
    }
 
-   button.button-style {
-
-    background-color:#DC9F96;
-    padding-top: 0px; /* La moitié de la hauteur restante (56 - 20 = 36 / 2 = 18) */
-   padding-bottom: 8px;
-   padding-left: 10px;
-   padding-right: 4px;
-   display:block;
-   margin-bottom:1px;
-   border-radius: 1px 0px 0px 0px;
-   color:white;
-   font-size:20px;
-   text-align:center; 
-   
-   
-}
-
-
-input[type="text"] {
-
-   width: 80px;
-   height:57px;
-   border-radius: 7px 0px 0px 7px;
-   color:black;
-   
-}
-
-a.elementor-button.elementor-button-link.elementor-size-md {
-
-    width:100px;
-    height:56px;
-    border-radius: 3px 3px 3px 3px ;
+   section.elementor-section.elementor-top-section.elementor-element.elementor-element-0a0c5a0.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default { 
     
+  background-color:#3B8E46;
+
+   }
+
+   input[type="text"],input[type="email"]
+   {
+    height: 70px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 400;
+    color: #666;
+    padding: 10px;
+    outline: none;
+    border: none;
+    
+}
+
+
+.wpcf7 input:not([type=submit]) {
+  width: 100%;
+  padding: .75em;
+  width:383px;
+  
+}
+
+textarea#your-message { 
+  height:237px;
+  width:38px;
+   border-radius:8px
+
+  }
+
+  textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
+    width:383px;
+    height:237px  
+  
+  }
+
+input.wpcf7-form-control.wpcf7-submit.has-spinner {
+  margin-left:76px
+
+ }
+
+ .elementor-element.elementor-element-c2bc6b2.gallery-spacing-custom.elementor-widget.elementor-widget-image-gallery {
+  padding:0px 100px 0px 100px
+ 
+ }
+ 
+
+
+.adminlink {
+
+  font-size: 16px;
+  text-align: center;
+  font-family: "Syne", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color:black;
+}
+
+/* Inverser les positions de "Commander" et "Admin" */
+ul.hfe-nav-menu li:nth-child(2) {
+  order: 3; /* Mettre le bouton "Commander" à la troisième position */
+  color: white !important;
+  color: var(--e-global-color-astglobalcolor5 );
+  background-color: #DC9F96;
+  border-radius: 0px 0px 0px 0px;
+  font-size: 89px;
+}
+
+ul.hfe-nav-menu li:nth-child(3) {
+  order: 2; /* Mettre le bouton "Admin" à la deuxième position */
+  
+  padding-left: 31px;
+  padding-right: 61px;
+  margin-top: 25px;
+
+}
+
+
+/* Changer la couleur du texte du bouton "Commander" en blanc en utilisant !important */
+ul.hfe-nav-menu li:nth-child(2) a.hfe-menu-item {
+  color: white !important;
+  font-weight:700!important;
+  
 }

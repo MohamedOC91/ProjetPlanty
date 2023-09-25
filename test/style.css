@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #3B8E46;
+    font-family: 'Syne', sans-serif;
+    color: #fff;
+}
+.container {
+    width : 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+    padding: 50px 0;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+hr {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.votre-commande h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.commande-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.commande-items .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.commande-items .item img {
+    margin-bottom: 20px;
+}
+.commande-items .item .item-ctrl {
+    display: flex;
+}
+.commande-items .item .item-ctrl .validate {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #E0B9B4;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    transition: all 250ms;
+  }
+  .commande-items .item .item-ctrl .validate:hover {
+    background-color: #DC9F96;
+  }
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }
+  .number-input {
+    /* border: 1px solid #ddd; */
+    display: inline-flex;
+    margin-right: 10px;
+  }
+  
+  .number-input,
+  .number-input * {
+    box-sizing: border-box;
+  }
+  .number-btns {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .number-input button {
+    outline:none;
+    appearance: none;
+    background-color: #DC9F96;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height:27px;
+    
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+  }
+  .number-input button:nth-child(2){
+    border-radius: 0 8px 0 0;
+    border-bottom: 2px solid white;
+  }
+  .number-input button:nth-child(1){
+    border-radius: 0 0 8px 0;
+  }
+
+  
+  .number-input button:before,
+  .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 2px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+  }
+  .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  
+  .number-input input[type=number] {
+    font-family: sans-serif;
+    max-width: 3.5rem;
+    padding: .5rem;
+    border: solid #ddd;
+    border-width:1px;
+    border-radius: 8px 0 0px 8px;
+    font-size: 1rem;
+    height: 54px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+ .informations-livraison {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+ }
+ .informations-livraison-item {
+    width: 100%;
+ }
+ .informations-livraison-item form {
+    display: flex;
+    flex-direction: column;
+ }
+ .informations-livraison form label {
+    font-size: 20px;
+    margin-bottom: 8px;
+ }
+ .informations-livraison form input {
+    height: 70px;
+    border-radius: 8px;
+    margin-bottom: 1rem; 
+    font-size: 20px;
+    font-weight: 400;
+    color: #666;
+    padding: 10px;
+    outline: none;
+    border: none;
+ }
+ .line {
+    height: 450px;
+    width: 2.5px;
+    background-color: #fff;
+ }
+
+ .commander-btn-div {
+    width: 100%;
+    text-align: center;
+ }
+ .commander-btn {
+    width: 200px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #E0B9B4;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    margin: 50px 0;
+    cursor: pointer;
+    transition: all 250ms;
+ }
+ .commander-btn:hover {
+    background-color: #DC9F96;
+ }
+
+
+ @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .line {
+        display: none;
+    }
+    .informations-livraison {
+        flex-wrap: wrap;
+    }
+    .informations-livraison-item{
+        width: 100%;
+    }
+ }
