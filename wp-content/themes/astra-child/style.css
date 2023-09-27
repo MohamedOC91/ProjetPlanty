@@ -341,3 +341,59 @@ ul.hfe-nav-menu li:nth-child(2) a.hfe-menu-item {
   font-weight:700!important;
   
 }
+/* Ajoutez cette media query pour les écrans de 375px de largeur ou moins */
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 14px !important; /* Réduire la taille de police du corps */
+  }
+
+  h1 {
+    font-size: 22px !important; /* Réduire la taille de police de h1 */
+    padding: 20px 0 !important; /* Réduire l'espacement autour de h1 */
+  }
+
+  h2 {
+    font-size: 18px !important; /* Réduire la taille de police de h2 */
+    margin-bottom: 10px !important; /* Réduire la marge inférieure de h2 */
+  }
+
+  .container {
+    padding: 20px 0 !important; /* Réduire l'espacement dans le conteneur */
+  }
+
+  .informations-livraison {
+    margin-top: 15px !important; /* Réduire la marge supérieure des informations de livraison */
+  }
+
+  .informations-livraison label {
+    font-size: 14px !important; /* Réduire la taille de police des étiquettes de livraison */
+    line-height: 25px !important; /* Réduire la hauteur de ligne des étiquettes de livraison */
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    height: 45px !important; /* Réduire la hauteur des champs de texte et d'e-mail */
+    font-size: 14px !important; /* Réduire la taille de police des champs de texte et d'e-mail */
+    width: 300px !important;
+  }
+
+  textarea#your-message {
+    height: 130px !important; /* Réduire la hauteur de la zone de texte */
+    width: 100% !important; /* Utiliser la largeur complète de l'écran */
+    
+  }
+
+  input.wpcf7 input:not([type=submit]) {
+   
+    width: 200px !important;
+  }
+
+  .elementor-element-c2bc6b2.gallery-spacing-custom.elementor-widget-image-gallery {
+    padding: 0 !important; /* Supprimer le rembourrage personnalisé de la galerie d'images */
+  }
+
+  .commander-btn,
+  input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    width: 100% !important; /* Utiliser la largeur complète de l'écran */
+  }
+}
